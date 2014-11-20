@@ -5,14 +5,14 @@ In order to get Vim to behave nice with XCode, a couple of plugins are necessary
 
 
 ##2. Clang
-Using [Homebrew](http://brew.sh/) to install clang.
+Using [Homebrew](http://brew.sh/) to install clang.    
     brew install --HEAD llvm --with-clang
 
 
 ##3. [Clang Complete](https://github.com/Rip-Rip/clang_complete) Vim plugin 
-Using Pathogen to install clang_complete vim plugin
-    You can [download it here](https://github.com/Rip-Rip/clang_complete).
-Below is configuration to make it work.
+Using Pathogen to install clang_complete vim plugin.    
+You can [download it here](https://github.com/Rip-Rip/clang_complete).
+###Below is configuration to make it work.
     " Tell Vundle to download & import the clang complete plugin
     Bundle 'Rip-Rip/clang_complete'
 
@@ -78,6 +78,6 @@ Another feature of XCode that I could not live without is the easy way to switch
 
 
 
-
+***
     
 From: [vim objective-c tool config](http://appventure.me/2013/01/29/use-vim-as-xcode-alternative-ios-mac-cocoa/)
