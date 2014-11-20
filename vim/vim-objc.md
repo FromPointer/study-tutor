@@ -1,15 +1,15 @@
 # Use VIM as Xcode alternative
 
 ##1. Installing Packages
-    In order to get Vim to behave nice with XCode, a couple of plugins are necessary. In order to install them, I’d recommend using a package manager like Pathogen or Vundle. I’m using Vundle. This means that whenever you see something like “Bundle ‘name/plugin’” in my Vim configuration, it is a Vundle command that will look up the Vim plugin on Github, download it, and include it - all in one step.
+In order to get Vim to behave nice with XCode, a couple of plugins are necessary. In order to install them, I’d recommend using a package manager like Pathogen or Vundle. I’m using Vundle. This means that whenever you see something like “Bundle ‘name/plugin’” in my Vim configuration, it is a Vundle command that will look up the Vim plugin on Github, download it, and include it - all in one step.
 
 
 ##2. Clang
-Using [Homebrew](http://brew.sh/) to install clang
+Using [Homebrew](http://brew.sh/) to install clang.
     brew install --HEAD llvm --with-clang
 
 
-##[Clang Complete](https://github.com/Rip-Rip/clang_complete) Vim plugin 
+##3. [Clang Complete](https://github.com/Rip-Rip/clang_complete) Vim plugin 
 Using Pathogen to install clang_complete vim plugin
     You can [download it here](https://github.com/Rip-Rip/clang_complete).
 Below is configuration to make it work.
@@ -37,7 +37,7 @@ Below is configuration to make it work.
     <c-x> <c-o> Show list of completions
 
 
-##Ultisnips
+##4. Ultisnips
 For the actual completion, Clang Complete has its own code but can also work with different completion plugins. I found the Clang Complete solution to not work very well, so I tested the others. Ultisnips comes closest to the XCode experience. It also includes a set of readymade snippets for common Objective-C patterns.
 
 ###So next up you need to [install ultisnips](https://github.com/SirVer/ultisnips):
@@ -56,14 +56,14 @@ In XCode, when you want to switch between several parameters on a selector (doSo
     format<tab> NSString stringWithForma
 
 
-##Indentation
+##5. Indentation
 Vim’s default Objective-C indent is not very functional. 
 Thankfully, Björn Winckler, a main contributor to MacVim, [released a very good plugin for this](https://github.com/b4winckler/vim-objc), 
 that fixes all the issues I had:
     Bundle "b4winckler/vim-objc"
 
 
-##Switching Header Files
+##6. Switching Header Files
 Another feature of XCode that I could not live without is the easy way to switch between header and implementation. [Vim-iOS](https://github.com/eraserhd/vim-ios) adds commands for this. With :A you can switch to the alternate file. In addition to that it also offers :XBuild for building your project and :Xinstall for installing it on a device.
     Bundle 'eraserhd/vim-ios.git'
 
@@ -71,5 +71,13 @@ Another feature of XCode that I could not live without is the easy way to switch
     :A  Switch to alternate file
     :XBuild Compile Project
     :Xinstall   Install on device
+    
+
+
+
+
+
+
+
     
 From: [vim objective-c tool config](http://appventure.me/2013/01/29/use-vim-as-xcode-alternative-ios-mac-cocoa/)
