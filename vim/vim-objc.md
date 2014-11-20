@@ -6,7 +6,7 @@ In order to get Vim to behave nice with XCode, a couple of plugins are necessary
 
 ##2. Clang
 Using [Homebrew](http://brew.sh/) to install clang.    
-    brew install --HEAD llvm --with-clang
+      brew install --HEAD llvm --with-clang
 
 
 ##3. [Clang Complete](https://github.com/Rip-Rip/clang_complete) Vim plugin 
