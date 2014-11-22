@@ -9,7 +9,7 @@
 ###2.1 Commond line
     For Error `file`, we add compiler option in compiler.
     clang -fobjc-arc -c main.m -o main.o
-    ######or
+######or
     clang -fojbc-gc -c main.m -o main.o
 
 
@@ -17,6 +17,6 @@
 ###2.2 In xcode Tool
 
 #####In Project configuration file -> Build Phrases -> Compiler Sources ,
-Find Error Source `file`(use `weak` file), double click the file, and then 
+Find Error Source `file`(use `weak` keyword file), double click the file, and then 
 write `-fobjc-arc` or `-fobjc-gc`
 
