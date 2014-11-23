@@ -10,7 +10,7 @@ I’ve found an interesting presentation of Venkat Subramaniam about [Design Pat
 
 ##Closure Design Patterns
 ###Execute Around Method
-########A pair of operation that needs to be performed before and after operations.
+######A pair of operation that needs to be performed before and after operations.
 
     def operations(closure) {
         println "Open"
@@ -25,7 +25,7 @@ I’ve found an interesting presentation of Venkat Subramaniam about [Design Pat
     ===> Close
 
 ###Pluggable Behavior
-########Specify the behavior of an object at runtime.
+######Specify the behavior of an object at runtime.
 
     def selectValues(number, closure) {
         def list = []
@@ -40,7 +40,7 @@ I’ve found an interesting presentation of Venkat Subramaniam about [Design Pat
                                    
                                    
 ###Iterator Pattern
-########Allows sequential access to the elements.
+######Allows sequential access to the elements.
 
     def listNumbers(closure) {
         (0..3).each { closure it }
@@ -58,7 +58,7 @@ I’ve found an interesting presentation of Venkat Subramaniam about [Design Pat
                                                
                                                
 ###Dynamical Conditional Execution
-########Create and execute a conditional operation.
+######Create and execute a conditional operation.
 
     def greet(user, successClosure, failClosure) {
         if (isAdmin(user)) successClosure()
@@ -68,7 +68,7 @@ I’ve found an interesting presentation of Venkat Subramaniam about [Design Pat
     greet(user, { println "Hi Admin!" }, { println "Hello User" })
 
 ###Template Method Pattern
-########Define common algorithm steps (getting a customer) and customizations (passed as a closure).
+######Define common algorithm steps (getting a customer) and customizations (passed as a closure).
 
     def withCustomer (id, closure) {
         def customer = getCustomer(id)
@@ -81,7 +81,7 @@ I’ve found an interesting presentation of Venkat Subramaniam about [Design Pat
 
 
 ###Loan Pattern
-########Ensures that a resource is deterministically disposed of once it goes out of scope.
+######Ensures that a resource is deterministically disposed of once it goes out of scope.
 
     def withListOfWordsForEachLine(file, closure) {
         def reader = file.newReader()
@@ -97,7 +97,7 @@ I’ve found an interesting presentation of Venkat Subramaniam about [Design Pat
     }
 
 ###Command Design Pattern
-########Encapsulate all the information needed to call a method at a later time.
+######Encapsulate all the information needed to call a method at a later time.
 
     def count = 0
     def commands = []
@@ -117,7 +117,7 @@ I’ve found an interesting presentation of Venkat Subramaniam about [Design Pat
 
 
 ###Strategy Pattern
-########Define a family of interchangeable algorithms.
+######Define a family of interchangeable algorithms.
 
     calcMult = { n, m -> n * m }
     calcAdds = { n, m ->
@@ -133,7 +133,7 @@ I’ve found an interesting presentation of Venkat Subramaniam about [Design Pat
 
 
 ###Factory Pattern
-########Abstract the object creation process (currying as a function factory).
+######Abstract the object creation process (currying as a function factory).
 
     def adder = { x, y -> x + y }
     def incrementer = adder.curry(1)
@@ -142,13 +142,16 @@ I’ve found an interesting presentation of Venkat Subramaniam about [Design Pat
     
     
 ###Method Combination
-########Build a method from components.
+######Build a method from components.
 
     def sum = { Collection collection -> collection.sum() }
     def first2 = { Collection collection -> collection.take(2) }
     def take2andAdd = first2 >> sum
 
     assert 3 == take2andAdd([1, 2, 3, 4, 5])
+
+***
+## **References**
 
 * From: [Closure design pattern](http://qafoo.com/talks/12_10_ipc_closure_design_patterns.pdf)
 * From: [Closure-Design-Pattern In Dynamic Languages](http://arturoherrero.com/2012/04/25/closure-design-patterns/)
