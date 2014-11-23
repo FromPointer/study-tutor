@@ -1,4 +1,4 @@
-# The following are som functions about Makefile file
+# The following are many functions about Makefile file
 
 
 
