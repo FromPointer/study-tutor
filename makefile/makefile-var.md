@@ -1,4 +1,4 @@
-##Makefile'a main variable and meaning
+##Makefile's Variable
 
 ###Variable definition
     Variable: Using `=` and `define` definition.
@@ -11,7 +11,7 @@
 ###Basic of Variable References
 #####Uasge:
     $(variable_name) 
-#######`or`
+######`or`
     ${variable_name)
 
 ###Tow Substitutions of Variable
@@ -31,9 +31,9 @@ Result:
     Huh?
 At first $(foo) is substitued by $(bar), then $(bar) is substitued by $(ugh), at last $(ugh) is substitued by Hug?.
 
-####Disadvantage：
+####Disadvantages：
 1. 使用此风格的变量定义，可能会由于出现变量的递归定义而导致make陷入到无限的变量展开过程中，最终使make执行失败.
-######Eg:
+#####Eg:
     x = $(y)
     y = $(x) $(z)
 这种情况下同样会导致make陷入到无限的变量展开过程中。
@@ -46,7 +46,7 @@ To avoid `Recursive Substitution`, there is another way to define variable. Usin
     x := foo
     y := $(x) bar
     x := later
-is equal to:
+######is equal to:
     y := foo bar
     x := later
 
@@ -159,7 +159,7 @@ The file name of the target of the rule. If the target is an archive member, the
 
 ######2. $% 
 当规则的目标文件是一个静态文件时，`$%`代表静态库的一个成员名。例如，某规则的目标是"foo.a(bar.o)",那么，`$%`的值就为"bar.o"，而`$@`的值为"foo.a". 
-如果目标不是静态库文件，$%的值为空。       
+如果目标不是静态库文件，`$%`的值为空。       
 The target member name, when the target is an archive member. See Archives. For example, if the target is foo.a(bar.o) then `$%` is bar.o and `$@` is foo.a. 
 `$%` is empty when the target is not an archive member.
 
