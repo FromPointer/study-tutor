@@ -7,7 +7,7 @@
 
 ***
 ###Website 2:
-#####From: [Ry's Objective-c Tutorial](http://rypress.com/tutorials/objective-c/)
+#####From: [^|^ Ry's Objective-c Tutorial](http://rypress.com/tutorials/objective-c/)
 
 
 ***
@@ -25,14 +25,16 @@
 
 ***
 ###Website 6:
-#####From: [Ihone Ipad Practice](http://edu.51cto.com/course/course_id-387.html)##
+#####From: [Ihone Ipad Practice Videos](http://edu.51cto.com/course/course_id-387.html)##
 
 ***
 ###Website 7:
 #####From: [IOS7 Best Practice](http://www.raywenderlich.com/55384/ios-7-best-practices-part-1)##
 
 
-
+***
+###Website 8:
+#####From: [Objective C Concepts](http://rypress.com/tutorials/objective-c/properties.html)##
 
 ***
 ## Good Forum 
