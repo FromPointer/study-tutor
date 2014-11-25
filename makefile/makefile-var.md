@@ -190,7 +190,8 @@ This is primarily useful for use in linking commands where it is meaningful to r
 ######8. $|
 The names of all the order-only prerequisites, with spaces between them.
 
-#####9. $* 它的值是目标文件去掉后缀后的名称
+#####9. $* 
+它的值是目标文件去掉后缀后的名称      
 The stem with which an implicit rule matches. If the target is dir/a.foo.b and the target pattern is a.%.b then the stem is dir/foo.
 The stem is useful for constructing names of related files.
 
