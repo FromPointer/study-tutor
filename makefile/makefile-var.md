@@ -1,6 +1,6 @@
-##Makefile's Variable
+##Variable In Makefile File
 
-###Variable definition
+###Variable Definition
     Variable: Using `=` and `define` definition.
 
     Variable name is sensitive for Case.
