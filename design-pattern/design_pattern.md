@@ -13,3 +13,6 @@
 
 ***
 ####[Source_Making Design Pattern](http://sourcemaking.com/design_patterns/abstract_factory)
+
+***
+####[Objc Singleton](http://www.idev101.com/code/Objective-C/singletons.html)
