@@ -23,6 +23,15 @@
 ###Websit 5:
 #####From: [Cocoa Guidelines for developer](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
 
+***
+###Website 6:
+#####From: [Ihone Ipad Practice](http://edu.51cto.com/course/course_id-387.html)##
+
+***
+###Website 7:
+#####From: [IOS7 Best Practice](http://www.raywenderlich.com/55384/ios-7-best-practices-part-1)##
+
+
 
 
 ***
