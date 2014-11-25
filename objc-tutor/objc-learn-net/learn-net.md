@@ -37,4 +37,10 @@
 #####From: [Objective C Concepts](http://rypress.com/tutorials/objective-c/properties.html)##
 
 ***
+###Website 9:
+#####From: [ios-design-patterns](http://www.raywenderlich.com/46988/ios-design-patterns)##
+
+
+
+***
 ## Good Forum 
