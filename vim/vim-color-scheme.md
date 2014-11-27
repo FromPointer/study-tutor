@@ -14,10 +14,12 @@ __[VIM Color Sets Google](https://code.google.com/p/vimcolorschemetest/)__
 This is a vim-color plugin : [Color Scheme Explorer](http://www.vim.org/scripts/script.php?script_id=1298).
 Color Scheme Explorer display a list of all available color schemes you have installed on your computer. Once opened, you are able to scroll through the list and select the color scheme of your choice.
 
-#####Intalling plugin
-######*. Installing using pathogen 
+####__Installing plugin__
+######*. Installing using pathogen
     cd ~.vim
     git clone https://github.com/jdevera/vim-cs-explorer bundle/csExplorer
+
+__[*Tips]__ If didn't install Pathogen, refer to [Pathogen's Installing](https://github.com/FromPointer/.vim-tutor/wiki/pathogen-install-plugins)
 
 ######*. Direct installing plugin
 Download [`csExplorer`](http://www.vim.org/scripts/script.php?script_id=1298),
@@ -27,12 +29,12 @@ then Extract to `.vim` directory.
 
 ***
 ###2. Vim Color Scheme File
-Default Vim Color Scheme file is in the `color` of vim installed directory
-######Eg:
-In Mac, default color directory:    
+Default Vim Color Scheme file is in the `colors` of vim installed directory
+Eg:
+######In Mac, default color directory:    
     /usr/local/share/vim/vim74/colors    
 
-In CentOS, default color directory:
+######In CentOS, default color directory:
     /usr/share/vim/vim74/colors
     
 __VIM Color Scheme File Download Address:__    
@@ -43,7 +45,7 @@ __VIM Color Scheme File Download Address:__
 
 ***
 ###2. Add Color Scheme File
-Download Color Scheme file from aboving website, then add the file to `Color Scheme Directory`.
+Download `Color Scheme File` from aboving website, then add the file to `Color Scheme Directory`.
 
 
 ***
