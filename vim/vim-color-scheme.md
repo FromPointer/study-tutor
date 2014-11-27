@@ -61,7 +61,7 @@ Download `Color Scheme File` from aboving website, then add the file to `Color S
     :ColorSchemeExplorer
     then select scheme you liked, __Return__
 
-[Tips]Using plugin `csExplorer`, after selecting color scheme, `close vim`, the `color sheme` miss; If you like the `color scheme`, you need to modify `colorscheme` to "Color Name" you liked in `.vimrc` file. 
+__[*Tips]__ Using plugin `csExplorer`, after selecting color scheme, `close vim`, the `color sheme` miss; If you like the `color scheme`, you need to modify `colorscheme` to "Color Name" you liked in `.vimrc` file. 
 
 
 
