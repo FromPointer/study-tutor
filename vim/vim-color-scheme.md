@@ -47,6 +47,8 @@ __VIM Color Scheme File Download Address:__
 ###2. Add Color Scheme File
 Download `Color Scheme File` from aboving website, then add the file to `Color Scheme Directory`.
 
+You can put `the Color-Scheme-File` to default's system directory, or put into `~/.vim/colors` directory.
+
 
 ***
 ###3. Color Scheme Settings
