@@ -1,7 +1,7 @@
 ## This is file about VIM COLOR SCHEME and config.
 
 ***
-###VIM Color Scheme Website
+###VIM Color Scheme References
 __[VIM Script Main](http://www.vim.org/scripts/script_search_results.php?keywords=&script_type=color+scheme&order_by=creation_date&direction=descending&search=search)__       
 __[VIM Color Sets Google](https://code.google.com/p/vimcolorschemetest/)__
 
@@ -56,9 +56,12 @@ Download `Color Scheme File` from aboving website, then add the file to `Color S
     colorscheme [color-scheme-name]
     
     
-####*. Using plugin `csExplorer` management
-######In vim edit mode, using default the command to invoke the Color Scheme Explorer
+####*. Using plugin `csExplorer` setting
+######In vim edit mode, using 'following's command' to invoke the Color Scheme Explorer
     :ColorSchemeExplorer
+    then select scheme you liked, __Return__
+
+[Tips]Using plugin `csExplorer`, after selecting color scheme, `close vim`, the `color sheme` miss; If you like the `color scheme`, you need to modify `colorscheme` to "Color Name" you liked in `.vimrc` file. 
 
 
 
