@@ -1,4 +1,4 @@
-##This file is mainly about study papers of c and cplusplus
+##This file mainly contains studying documents of C and C++!
 
 ***
 ###C Language
