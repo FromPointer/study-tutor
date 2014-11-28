@@ -72,19 +72,21 @@ In __C++03__ you can’t initialize __POD__ array members and POD arrays allocat
 
 
 
-
 #####4. Deleted and Defaulted Functions
 __Function__ in the form:
+    
     struct A {
         A()=default; //C++11
         virtual ~A()=default; //C++11
     };
+    
 is called a defaulted function. The `=default`; part instructs the compiler to generate the default implementation for the function. Defaulted functions have two advantages: They are more efficient than manual implementations, and they rid the programmer from the chore of defining those functions manually.     
 
 The opposite of a defaulted function is a deleted function:
+    
     int func()=delete;
 
-__Deleted functions__ are useful for preventing `object copying`, among the rest. Recall that __C++__ automatically declares a copy constructor and an assignment operator for classes. To disable copying, declare these two special member functions =delete:
+__Deleted functions__ are useful for preventing `object copying`, among the rest. Recall that __C++__ automatically declares a copy constructor and an assignment operator for classes. To disable copying, declare these two special member functions `=delete`:
 
     struct NoCopy {
         NoCopy & operator =( const NoCopy & ) = delete;
@@ -98,14 +100,18 @@ __Deleted functions__ are useful for preventing `object copying`, among the rest
 
 #####5. nullptr
 At last, __C++__ has a keyword that designates a __null pointer constant__. `nullptr` replaces the bug-prone `NULL` macro and the literal `0` that have been used as __null pointer__ substitutes for many years. `nullptr` is strongly-typed:
+   
     void f(int); //#1
     void f(char *);//#2
+    
     //C++03
     f(0); //which f is called?
+    
     //C++11
     f(nullptr) //unambiguous, calls #2
 
 `nullptr` is applicable to all pointer categories, including `function pointers` and `pointers to members`:
+    
     const char *pc=str.c_str(); //data pointers
     if (pc!=nullptr) {
         cout<<pc<<endl;
@@ -130,13 +136,14 @@ In __C++11__ a `constructor` may call `another constructor` of the same class:
 
 
 #####7. Rvalue References
-__Reference types__ in __C++03__ can only bind to `lvalues`. __C++11__ introduces a new category of reference types called `rvalue` references. 
-`Rvalue` references can bind to `rvalues`, 
-    e.g. __temporary objects__ and __literals__.  
+__Reference types__ in __C++03__ can only bind to `lvalues`. __C++11__ introduces a new category of reference types called `rvalue` references. `Rvalue` references can bind to `rvalues`, 
+
+    Eg. __temporary objects__ and __literals__.  
 
 The primary reason for adding `rvalue references` is `move` semantics.    
 
 Unlike traditional `copying`, __moving__ means that a __target object__ pilfers the __resources of the source object__, leaving the __source__ in an __“empty”__ state.
+
 In certain cases where making a copy of an object is both expensive and unnecessary, a `move` operation can be used instead. To appreciate the performance gains of `move` semantics, consider string swapping. A naive implementation would look like this:
     
     void naiveswap(string &a, string & b) {
