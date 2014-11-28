@@ -13,13 +13,13 @@
 #####1. Lambda Expression
 A __lambda expression__ lets you define functions locally, at the place of the call, thereby eliminating much of the tedium and security risks that function objects incur.     
 
-__A lambda expression has the form:__
+__A lambda expression__ has the form:
+    
     [capture](parameters)->return-type {body}
 
 The `[]` construct inside a __function call’s argument list__ indicates the beginning of a __lambda expression__. 
     
-    int main()
-    {
+    int main() {
         char s[]="Hello World!";
         int Uppercase = 0; //modified by the lambda
         for_each(s, s+sizeof(s), [&Uppercase] (char c) {
@@ -31,23 +31,29 @@ The `[]` construct inside a __function call’s argument list__ indicates the be
     
 
 #####2. Automatic Type Deduction and decltype
-In __C++03__, you must specify the type of an object when you declare it. Yet in many cases, an object’s declaration includes an initializer. __C++11__ takes advantage of this, letting you declare objects without specifying their types:
+In __C++03__, you must specify the type of an object when you declare it. Yet in many cases, an object’s declaration includes an initializer. 
+__C++11__ takes advantage of this.
+letting you declare objects without specifying their types:
+    
     auto x=0; //x has type int because 0 is int
     auto c='a'; //char
     auto d=0.5; //double
     auto national_debt=14400000000000LL;//long long
 
 Consider:
+
     void func(const vector<int> &vi)
     {
         vector<int>::const_iterator ci=vi.begin();
     }
 
 Instead, you can declare the __iterator__ like this:
+    
     auto ci=vi.begin()
 
 #####3. Uniform Initialization Syntax
 In __C++03__ you can’t initialize __POD__ array members and POD arrays allocated using `new[]`. __C++11__ cleans up this mess with a uniform brace notation:
+    
     class C{
         int a;
         int b;
@@ -63,6 +69,9 @@ In __C++03__ you can’t initialize __POD__ array members and POD arrays allocat
     public:
         X() : a{1,2,3,4} {} //C++11, member array initializer
     };
+
+
+
 
 #####4. Deleted and Defaulted Functions
 __Function__ in the form:
@@ -86,6 +95,7 @@ __Deleted functions__ are useful for preventing `object copying`, among the rest
 
 
 
+
 #####5. nullptr
 At last, __C++__ has a keyword that designates a __null pointer constant__. `nullptr` replaces the bug-prone `NULL` macro and the literal `0` that have been used as __null pointer__ substitutes for many years. `nullptr` is strongly-typed:
     void f(int); //#1
@@ -102,6 +112,8 @@ At last, __C++__ has a keyword that designates a __null pointer constant__. `nul
     }
     int (A::*pmf)()=nullptr; //pointer to member function
     void ( *pmf )()=nullptr; //pointer to function
+
+
 
 #####6. Delegating Constructors
 In __C++11__ a `constructor` may call `another constructor` of the same class:
@@ -126,6 +138,7 @@ The primary reason for adding `rvalue references` is `move` semantics.
 
 Unlike traditional `copying`, __moving__ means that a __target object__ pilfers the __resources of the source object__, leaving the __source__ in an __“empty”__ state.
 In certain cases where making a copy of an object is both expensive and unnecessary, a `move` operation can be used instead. To appreciate the performance gains of `move` semantics, consider string swapping. A naive implementation would look like this:
+    
     void naiveswap(string &a, string & b) {
         string temp = a;
         a=b;
@@ -149,6 +162,7 @@ This is expensive. __Copying a string__ entails the allocation of raw memory and
     }
 
 If you’re implementing a class that supports moving, you can declare a move constructor and a move assignment operator like this:
+    
     class Movable {
         Movable (Movable&&); //move constructor
         Movable&& operator=(Movable&&); //move assignment operator
