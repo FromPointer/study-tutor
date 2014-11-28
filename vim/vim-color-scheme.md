@@ -42,6 +42,8 @@ __VIM Color Scheme File Download Address:__
 [Github csExplorer](https://github.com/jdevera/vim-cs-explorer)    
 [VIM Color Scheme From Google](http://vimcolorschemetest.googlecode.com/svn/colors/)    
 [vimcolorscheme](https://code.google.com/p/vimcolorschemetest/)    
+[vimcolors.com](http://vimcolors.com/)
+
 
 ***
 ###2. Add Color Scheme File
