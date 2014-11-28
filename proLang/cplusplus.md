@@ -202,6 +202,7 @@ The __C++11__ Standard Library defines new algorithms that mimic the set theory 
 
 ***
 ###Reference
-[C++ Reference Best](http://en.cppreference.com/w/)
-[C Reference](http://www.cplusplus.com/)
-[C++11 Wiki](http://en.wikipedia.org/wiki/C%2B%2B11)
+[C++ Reference Best](http://en.cppreference.com/w/)            
+[C Reference](http://www.cplusplus.com/)      
+[C++11 Wiki](http://en.wikipedia.org/wiki/C%2B%2B11)        
+[stroustrup-C++11FAQ](http://www.stroustrup.com/C++11FAQ.html)       
