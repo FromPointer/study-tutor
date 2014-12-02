@@ -17,3 +17,8 @@
 ##objc-style-guide
 #####This is document about objective-c programming style.
 
+
+***
+##Chrome-Repository
+__[Google-Chrome-Linux](http://www.google.com/linuxrepositories/)__
+
