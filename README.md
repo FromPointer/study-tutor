@@ -20,6 +20,6 @@
 
 ***
 ##Chrome-Repository
-__[Google-Chrome-Linux](http://www.google.com/linuxrepositories/)__
-__[Ubuntu-Chrome](http://www.douban.com/note/252982281/)__
+__[Google-Chrome-Linux](http://www.google.com/linuxrepositories/)__            
+__[Ubuntu-Chrome](http://www.douban.com/note/252982281/)__           
 
